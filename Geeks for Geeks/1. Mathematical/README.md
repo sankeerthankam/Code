@@ -1,5 +1,5 @@
-Print the pattern (You only need to write function here)
-Print table (This is a full code problem. Please see sample codes here before attempting the problem)
+1. Print the pattern (You only need to write function here)
+2. Print table (This is a full code problem. Please see sample codes here before attempting the problem)
 Series AP
 Series GP
 Closest Number
