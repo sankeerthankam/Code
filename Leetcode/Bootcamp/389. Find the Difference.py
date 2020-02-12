@@ -9,3 +9,15 @@ def findTheDifference(s, t):
     c2 = Counter([i for i in t])
 
     return ''.join([i[0] for i in c2 - c1])
+
+# Sort the lists of two strings
+# Traverse and compare each character 
+# Return the char where there is a difference
+
+def findTheDifference(s, t):
+    s = sorted(list(s))
+    t = sorted(list(t))
+    for i in range(len(s)):
+        if s[i]!=t[i]:
+            return t[i]
+    return t[-1]
