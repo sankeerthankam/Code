@@ -1,3 +1,12 @@
+# Assign negative = False to keep track of the sign of the integer
+# If input (x) is a negative num, make the 'negative' variable = True and update the num to positive (x = -x)
+# While the temp number is not 0, 
+    # Extarct each digit 
+    # Add it to the reverse integer (rev * 10) + digit
+    # Update the input (x)
+# If the number is out of range, return 0
+# Else update the reversed number with its respective (+ve or -ve sign) adn return the result
+
 def reverse(x):
 
     negative = False
