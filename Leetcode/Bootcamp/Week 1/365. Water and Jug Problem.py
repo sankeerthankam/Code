@@ -38,3 +38,6 @@ def canMeasureWater(x, y, z):
 
   # To get the coefficients of x, y when they will be equal to z :
   # https://leetcode.com/problems/water-and-jug-problem/discuss/83715/Math-solution-Java-solution
+  
+# Mathemetical Solution: 
+# https://www.youtube.com/watch?v=0Oef3MHYEC0
