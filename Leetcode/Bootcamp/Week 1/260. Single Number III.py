@@ -27,11 +27,11 @@ def singleNumber(nums):
 # Keep track of num of occurances of each element
 
 def singleNumber(nums):
-    one = set()
-    for n in nums:
-        if n not in one:
-            one.add(n)
+    res = set()
+    for i in nums:
+        if i not in res:
+            res.add(i)
         else:
-            one.remove(n)
+            res.remove(i)
 
-    return list(one)
+    return list(res)
