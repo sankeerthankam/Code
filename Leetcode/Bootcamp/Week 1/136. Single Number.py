@@ -30,7 +30,7 @@ def sol2(nums):
 # XOR of two similar elemets is 0 
 # XOR of two different elemets is 1
 # We do the same to the given list of elements -> It cancels out the similar elements and return the unique one
-
+# NOTE: This XOR approach oonly works in the scenario when the elements repeat twice. It doe not work when it repeats **thrice.**
 def sol3(nums):
     # https://www.youtube.com/watch?v=vQbrPU4hW3c
     res = 0
