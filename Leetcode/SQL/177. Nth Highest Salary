@@ -14,8 +14,8 @@ ORDER BY Salary
 -- My SQL
 SELECT Salary FROM Employee ORDER BY Salary DESC LIMIT n-1,1
 
--- Approach 3
--- Using Rank
+
+-- Approach 3 (Same as Approach 2)
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
 BEGIN
 DECLARE M INT;
@@ -24,3 +24,21 @@ SET M = N-1;
       select DISTINCT salary from Employee order by salary desc limit M, 1
   );
 END
+
+
+
+-- Approach 4
+-- Using DENSE RANK
+-- Second answer from the following link
+-- https://stackoverflow.com/questions/11183572/whats-the-difference-between-rank-and-dense-rank-functions-in-oracle/11183610
+-- https://www.geeksforgeeks.org/find-nth-highest-salary-table/
+select 
+      * 
+from (
+      select 
+            ename, sal, dense_rank() over(order by sal desc)r 
+      from 
+            Employee
+      ) 
+where r = n;
+
