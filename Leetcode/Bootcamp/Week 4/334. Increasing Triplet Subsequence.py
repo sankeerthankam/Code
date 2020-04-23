@@ -1,4 +1,7 @@
+# White board the solution to understand it better.
+# Took me 3 partial days to get to this solution
 def increasingTriplet(nums):
+    
     count = 0
     max1 = float('inf')
     max2 = float('inf')
