@@ -43,6 +43,8 @@ def removeDuplicates(nums):
 def removeDuplicates(nums):
     p1 = 1
     for i in range(len(nums)-1):
+        # If two adjacent elements are not equal, assign the pointer with i+1
+        # Increment the pointer
         if(nums[i]!=nums[i+1]):
             nums[p1] = nums[i+1]
             p1 = p1 + 1
