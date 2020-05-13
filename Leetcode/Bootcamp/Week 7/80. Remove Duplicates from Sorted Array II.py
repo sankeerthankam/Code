@@ -33,7 +33,37 @@ def removeDuplicates(nums):
 
 
 # Approach 2:
-# Move the elements to the beginning when ever you come across a number with more than 
+# Idea here is to move all relevant numbers to the beginning of the array.
+# Use a pointer (p1) to keep track of the next available index
+# For each i compare elements i-1 and i+1.
+  # If they are not equal (i.e. the occurances is less than 3)
+  # Move the ith element to p1-th position.
+  # Increment the pointer p1.
+
+# At the end of the loop, we have sorted all elements except for the last.
+# At this point, assign the last element to p1-th position and increment the pointer (p1)
+# Return p1 (i.e. length of the array with duplicate values less than 2)
+
+def removeDuplicates(nums):
+  l = len(nums)
+  if l < 3:
+      return l
+
+  p1 = 1
+  for i in range(1, l-1):
+      if nums[i-1] != nums [i+1]:
+          nums[p1] = nums[i]
+          p1 = p1 + 1
+
+  nums[p1] = nums[-1]
+  p1 = p1+1
+  return p1
+
+
+
+# Approach 3:
+# White board this
+
 def removeDuplicates(nums):
   i = 0
   for n in nums:
