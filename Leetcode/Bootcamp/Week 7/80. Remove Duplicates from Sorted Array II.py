@@ -30,3 +30,14 @@ def removeDuplicates(nums):
           p2 += 1
           cnt = 1
   return nums
+
+
+# Approach 2:
+# Move the elements to the beginning when ever you come across a number with more than 
+def removeDuplicates(nums):
+  i = 0
+  for n in nums:
+      if i < 2 or n > nums[i-2]:
+          nums[i] = n
+          i += 1
+  return i
