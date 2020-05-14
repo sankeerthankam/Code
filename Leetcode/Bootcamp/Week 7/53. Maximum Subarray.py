@@ -23,7 +23,7 @@ def maxSubArray(arr):
 # Do not use extra variable to calculate the len(array)
 # Initialize variable only if edge case fails
 # Update `max_sum` only when current_max > max_sum
-
+# https://www.youtube.com/watch?v=86CQq3pKSUw&t=58s
 def maxSubArray(nums):
   if len(nums) == 1:
       return nums[0]
