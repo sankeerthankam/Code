@@ -17,7 +17,14 @@ def findTheDifference(s, t):
 # Zip two lists and compare each elements
 # When there is a mismatch, return the char from the second list
 
-def diff(a, b):
+def findTheDifference(a, b):
     for i, j in zip(sorted(a) + [''], sorted(b)):
         if i != j:
             return j
+
+# Approach 3 
+# Sum each char of the two strings and return the char(diff in sum)
+def findTheDifference(s, t):
+    ssum = sum([ord(i) for i in s])
+    tsum = sum([ord(i) for i in t])
+    return chr(tsum - ssum)
