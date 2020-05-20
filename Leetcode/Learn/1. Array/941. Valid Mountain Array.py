@@ -50,7 +50,7 @@ def validMountainArray(A):
 
 # Approach 3
 # Using on for loop and one pointer (uphill)
-
+# https://leetcode.com/problems/valid-mountain-array/discuss/564508/python-greater97-explained-one-pass
 def validMountainArray(A):
   if len(A)<3 or A[0]>=A[1]:
       return False
