@@ -29,7 +29,7 @@ def validMountainArray(A):
   return True
 
 # Approach 2
-# Use two pointers flag1 and flag2
+# Using 1 for loop and two pointers (flag1 and flag2)
 # Update flag1 = True at the end of the increment peak
 # Update flag2 = True at the end of the decrement peak
 # return (flag1 and flag2) which will return True if both are True
@@ -47,3 +47,21 @@ def validMountainArray(A):
       elif A[i]>A[i+1]:
           flag2=True
   return flag1 and flag2
+
+# Approach 3
+# Using on for loop and one pointer (uphill)
+
+def validMountainArray(A):
+  if len(A)<3 or A[0]>=A[1]:
+      return False
+
+  uphill = True
+
+  for i in range(1,len(A)):
+      if uphill:
+          if A[i-1]>=A[i]:
+              uphill = False
+      if not uphill:
+          if A[i-1]<=A[i]:
+              return False
+  return not uphill
