@@ -14,6 +14,8 @@ def validMountainArray(A):
   for i in range(len(A)-1):
       if A[i] < A[i+1]:
           continue
+      elif A[i]==A[i+1]:
+          return False
       else:
           pointer = i
           break
