@@ -13,3 +13,9 @@ def subsets(nums):
         for i in combinations(nums, i):
             ls.append(list(i))
     return ls
+
+def subsets(nums):
+  result = [[]]
+  for num in nums:
+      result += [i + [num] for i in result]
+  return result
