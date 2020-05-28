@@ -26,18 +26,18 @@ def minMeetingRooms(intervals):
   starts.sort()
   ends.sort()
 
-  s = e = 0
-  numRooms = available = 0
-  while s < len(starts):
-      if starts[s] < ends[e]:
-          if available == 0:
-              numRooms += 1
+  start_pointer = end_pointer = 0
+  max_rooms = available_rooms = 0
+  while start_pointer < len(starts):
+      if starts[start_pointer] < ends[end_pointer]:
+          if available_rooms == 0:
+              max_rooms += 1
           else:
-              available -= 1
+              available_rooms -= 1
 
-          s += 1
+          start_pointer += 1
       else:
-          available += 1
-          e += 1
+          available_rooms += 1
+          end_pointer += 1
 
-  return numRooms
+  return max_rooms
