@@ -28,3 +28,45 @@ def carPooling(self, trips: List[List[int]], capacity: int) -> bool:
       if current_count > capacity:
           return False
   return True
+
+
+# Doesn't work
+def carPooling(trips, capacity):
+    available_capacity = 0
+    for i in range(len(trips)-1):
+        start_time_1 = trips[i][1]
+        end_time_1 = trips[i][2]
+        start_time_2 = trips[i+1][1]
+        end_time_2 = trips[i+1][2]
+        
+        if end_time_1 > start_time_2:
+            if trips[i][0] + trips[i+1][1] > capacity:
+                return False
+            else:
+                continue
+#                 available_capacity = capacity - i[0]
+    return True
+
+
+# Approach 2:
+# Naive approach
+# Doesn't address corner cases.
+def carPooling(trips, capacity):
+    from collections import defaultdict
+    dd = defaultdict(int)
+    for trip in trips:
+        num, start, end = trip
+        dd[start] += num
+        dd[end] -= num
+
+    # Passanger movement for each time timestamp
+    passangers = [count for time, count in sorted(dd.items())]
+
+
+    current_count = 0
+    for p in passangers:
+        current_count = current_count + p
+        if current_count > capacity:
+            return False
+    return True
+
