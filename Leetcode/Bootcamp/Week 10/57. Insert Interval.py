@@ -19,4 +19,31 @@ def insert(intervals, newInterval):
   return result
         
 # Approach 2
-https://leetcode.com/problems/insert-interval/discuss/21622/7%2B-lines-3-easy-solutions
+# Divide intervals into two buckets left and right
+# Left bucket -> All intervals whose end time is less than start_time of new interval
+# Right bucket -> All intervals whose start time is greater than end_time of new interval
+
+# If an interval does not fall in one of these buckets, you have update your start and end time.
+
+# https://leetcode.com/problems/insert-interval/discuss/21622/7%2B-lines-3-easy-solutions
+def insert(intervals, newInterval):
+  start = newInterval[0]
+  end = newInterval[1]
+  left = []
+  right = []
+  new_interval = []
+  for i in intervals:
+      if i[1] < start:
+          # left.append(i)
+          left += [i]
+      elif i[0] > end:
+          # right.append(i)
+          right += [i]
+      else:
+          start = min(i[0], start)
+          end = max(i[1], end)
+
+  new_interval.append(start)
+  new_interval.append(end)
+
+  return left + [new_interval] + right 
