@@ -23,8 +23,7 @@ def merge(intervals):
 def merge(intervals):
   if len(intervals) == 0:
       return []
-
-  # intervals.sort(key = lambda x : (x[0],x[1]))
+    
   intervals.sort()
 
   i, res = 0, []
