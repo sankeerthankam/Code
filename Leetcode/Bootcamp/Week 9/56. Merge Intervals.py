@@ -17,6 +17,7 @@ def merge(intervals):
       # There is no intersection, then append the current sub-list to result
       else:   
           res.append(intervals[i])
+
   return res
   
   
