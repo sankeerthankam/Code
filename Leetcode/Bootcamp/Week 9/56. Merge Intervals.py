@@ -1,3 +1,5 @@
+# Approach 1
+
 def merge(intervals):
   # Check edge case
   if not intervals:   
