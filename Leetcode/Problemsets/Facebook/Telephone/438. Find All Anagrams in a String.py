@@ -60,4 +60,3 @@ def findAnagrams(s, p):
 
   return output 
 
-def findAnagrams(s, p):
