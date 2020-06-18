@@ -21,7 +21,6 @@ def carPooling(self, trips: List[List[int]], capacity: int) -> bool:
   # Passanger movement for each time timestamp
   passangers = [count for time, count in sorted(dd.items())]
 
-
   current_count = 0
   for p in passangers:
       current_count = current_count + p
