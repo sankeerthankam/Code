@@ -59,4 +59,3 @@ def findAnagrams(s, p):
       i+=1
 
   return output 
-
