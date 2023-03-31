@@ -16,14 +16,13 @@ Output: true
 ------------------------------------------------------------------------------------------------------------------------------  
   
 class Solution:
-  def containsDuplicate(self, nums: List[int]) -> bool:
-      vis_ = set()
-      for i in nums:
-          if i not in vis_:
-              vis_.add(i)
-          else:
-              return True
-      return False
-
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        visited_ = set()
+        for i in nums:
+            if i not in visited_:
+                visited_.add(i)
+            else:
+                return True
+        return False
 
 ------------------------------------------------------------------------------------------------------------------------------
