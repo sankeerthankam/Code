@@ -1,14 +1,13 @@
 1. Array / String
 
-1.1 Merge Sorted Array - Easy
-https://leetcode.com/problems/merge-sorted-array/?envType=study-plan-v2&envId=top-interview-150
+[1.1 Merge Sorted Array] (https://leetcode.com/problems/merge-sorted-array/?envType=study-plan-v2&envId=top-interview-150)
+- Easy
 
+[1.2 Remove Element] (https://leetcode.com/problems/remove-element/description/?envType=study-plan-v2&envId=top-interview-150)
+ - Easy
 
-1.2 Remove Element - Easy
-https://leetcode.com/problems/remove-element/description/?envType=study-plan-v2&envId=top-interview-150
-
-
-1.3 Remove Duplicates from Sorted Array [https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/?envType=study-plan-v2&envId=top-interview-150]
+(1.3 Remove Duplicates from Sorted Array) [https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/?envType=study-plan-v2&envId=top-interview-150]
+- Medium
 
 Remove Duplicates from Sorted Array II
 Solution
