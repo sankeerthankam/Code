@@ -4,12 +4,11 @@
 
 [1.2 Remove Element](https://leetcode.com/problems/remove-element/description/?envType=study-plan-v2&envId=top-interview-150) - Easy
 
-[1.3 Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/?envType=study-plan-v2&envId=top-interview-150) - Medium
+[1.3 Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array/?envType=study-plan-v2&envId=top-interview-150) - Medium
+
+[1.4 Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/?envType=study-plan-v2&envId=top-interview-150) - Medium
 
 
-Remove Duplicates from Sorted Array II
-Solution
-Medium
 
 Majority Element
 Solution
