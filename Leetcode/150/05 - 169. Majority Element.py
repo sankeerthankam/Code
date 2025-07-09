@@ -28,4 +28,4 @@ def majorityElement(self, nums: List[int]) -> int:
         else:
             count = count - 1
 
-    return res
+    return majority
