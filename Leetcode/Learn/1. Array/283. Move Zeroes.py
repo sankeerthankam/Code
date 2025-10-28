@@ -2,13 +2,9 @@ def moveZeroes(self, nums: List[int]) -> None:
     """
     Do not return anything, modify nums in-place instead.
     """
-    left = 0
-    zero = 0
-    right = len(nums) - 1
-    while left <= right:
-        if nums[left] == 0:
-            nums.pop(left)
-            nums.append(0)
-            right -= 1
-        else:
-            left += 1
+    l = 0
+    for r in range(len(nums)):
+        if nums[r] != 0:
+            nums[l], nums[r] = nums[r], nums[l]
+            l = l + 1
+    return nums
