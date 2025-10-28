@@ -6,4 +6,3 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
             return [lookup_map[lookup_val], i]
         else:
             lookup_map[lookup_val] = i
-    return
