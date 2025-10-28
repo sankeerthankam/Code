@@ -20,7 +20,8 @@ class Solution:
                 profit = prices[r] - prices[l]
                 max_profit = max(max_profit, profit)
             else:
-                # found a cheaper price: update buy day
+                # if right pointer price is less than left pointer price, 
+                # then update left pointer to right, since we found a cheaper price
                 l = r
             r = r + 1
 
