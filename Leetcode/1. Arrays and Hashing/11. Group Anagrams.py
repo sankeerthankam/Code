@@ -9,14 +9,14 @@
 # The strings "ate", "eat", and "tea" are anagrams as they can be rearranged to form each other.
 
 def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-    ans = defaultdict(list)
-    for s in strs:
-        count = [0] * 26
-        for c in s:
-            count[ord(c) - ord("a")] += 1
-        ans[tuple(count)].append(s)
-        # print(ans)
-    return list(ans.values())
+    res = defaultdict(list)
+    for word in strs:
+        c_counts = [0] * 26
+        for char in word:
+            c_counts[ord(char) - ord("a")] += 1
+        res[tuple(c_counts)].append(word)
+        # print(res)
+    return list(res.values())
 
 # Complexity
 # Time complexity: O(m∗n)
