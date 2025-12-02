@@ -26,6 +26,7 @@ def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
 
 # Complexity
 # Time complexity: O(m∗n)
+    # m is number of words in the string and n is number of characters in each string
 # Space complexity: O(mn)
 
 # (1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0): ['eat']
