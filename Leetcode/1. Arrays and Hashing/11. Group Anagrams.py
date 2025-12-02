@@ -18,6 +18,12 @@ def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         # print(res)
     return list(res.values())
 
+# Why use tuples as keys instead of lists?
+# No, lists cannot be used as keys in Python dictionaries.
+# This restriction arises because dictionary keys must be hashable, meaning they must have a hash value that remains constant throughout their lifetime. 
+# Lists are mutable objects, which means their contents can be changed after they are created. 
+# If a list were used as a key and then modified, its hash value would change, making it impossible for the dictionary to efficiently locate the corresponding value.
+
 # Complexity
 # Time complexity: O(m∗n)
 # Space complexity: O(mn)
