@@ -1,6 +1,6 @@
 #### Array & Hashing
-[Two Sum](https://leetcode.com/problems/two-sum/) <br>
-[Valid Anagram](https://leetcode.com/problems/valid-anagram/) <br>
+1. [Two Sum](https://leetcode.com/problems/two-sum/) <br>
+1. [Valid Anagram](https://leetcode.com/problems/valid-anagram/) <br>
 [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) <br>
 [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) <br>
 [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) <br>
