@@ -18,7 +18,7 @@ def maxSubArray(self, nums: List[int]) -> int:
 # But we can simply optimize that by storing the max at each iteration instead of separately calculating it at the end.
 # Thus, we only need to maintain curMax which is the maximum subarray sum ending at i and maxTillNow which is the maximum sum we have seen till now. 
 # And this way of solving this problem is what we popularly know as Kadane's Algorithm
-# Works with list with all negative numbers 
+# Works with list with all negative numbers.
 
 def maxSubArray(self, nums: List[int]) -> int:
     max_sub = -inf
