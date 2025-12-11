@@ -21,3 +21,4 @@ def containsDuplicate(self, nums: List[int]) -> bool:
 
 # Time Complexity: O(n * logn), As we are using sorting function which takes nlogn time.
 # Auxiliary space: O(1), As we are not using extra space.
+
