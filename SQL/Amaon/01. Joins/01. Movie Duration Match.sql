@@ -16,7 +16,8 @@ with cte as
     select * from flight_schedule f
     left join entertainment_catalog e on 
     f.flight_duration >= e.duration
-    where duration <= flight_duration
+    where duration <= flight_duration 
+    -- Important to add where condition here to ensure movie duration is less than the flight duration 
     and flight_id = 101
 )
 select 
